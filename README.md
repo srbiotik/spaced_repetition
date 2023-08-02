@@ -1,6 +1,6 @@
 
 # Spacerep
-Spacerep is a small Python CLI, built on fire, tinydb to help busy devs (or anybody with a penchant for terminal) track down their online learning resources in an optimal way.
+Spacerep is a simple Python CLI built on **fire** and **tinydb** to help busy devs (or anybody with a penchant for terminal) track down their online learning resources in an optimal way.
 Specifically it uses the SM2 spaced repetition algorithm to calculate the forgetting curve and therefore the best intervals to fortify the study material based on number of repetitions and ease of recollection.
 
 # History of Spaced Repetition
