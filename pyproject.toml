@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "spaced-repetition"
+version = "0.1.0"
+description = ""
+authors = ["Milos Grujic <srbiotik@gmail.com>"]
+readme = "README.md"
+packages = [{include = "spaced_repetition"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fire = "^0.5.0"
+tinydb = "^4.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
