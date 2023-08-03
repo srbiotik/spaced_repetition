@@ -45,6 +45,9 @@ class SpacedRepetitor(object):
     print(f'Resources due: {len(due)}\n')
     if not len(due): return
     print_header()
+    for d in due:
+      print_resource(d)
+    print('\n')
 
 
 if __name__ == '__main__':
