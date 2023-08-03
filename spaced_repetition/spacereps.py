@@ -18,7 +18,9 @@ class SpacedRepetitor(object):
 
   def update(self, id, grade):
     resource = DB.get(doc_id = id)
-    c = Card(resource['repetitions'], interval=resource['interval'])
+    c = Card(resource['repetitions'], interval=resource['interval'], due_time=string_to_date(resource['due_time']))
+    if not c.is_due():
+      print('\nResource not due, cannot update!\n')
     c.update(grade)
     resource.update({ 'due_time': date_to_string(c.due_time), 'repetitions': c.repetitions, 'interval': c.interval })
     DB.update(resource, doc_ids=[resource.doc_id])
